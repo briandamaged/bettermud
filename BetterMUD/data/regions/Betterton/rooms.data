@@ -1,0 +1,57 @@
+[ID]                    1
+[REGION]                1
+[NAME]                  Betterton Town Square
+[DESCRIPTION]           You are in the town square of Betterton, a small city in the realm of BetterMUD.
+[DATABANK]
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    2
+[REGION]                1
+[NAME]                  Betterton Town Gardens
+[DESCRIPTION]           You are in the gardens of Betterton, where you can see much <#FFFF00>flora<$reset> and <#00FF00>fauna<$reset> all around.
+[DATABANK]
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    3
+[REGION]                1
+[NAME]                  Betterton Town Hall
+[DESCRIPTION]           You are in the Town Hall of Betterton, where the business of the city is conducted.
+[DATABANK]
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    4
+[REGION]                1
+[NAME]                  Bakery
+[DESCRIPTION]           You are in the Bakery of Betterton, where you can see <#FFFF00>PIES<$reset> being made!
+[DATABANK]
+[/DATABANK]
+[LOGICS]
+pieroom
+[DATA]
+[/DATA]
+[/LOGICS]
+
+[ID]                    5
+[REGION]                1
+[NAME]                  Avenue
+[DESCRIPTION]           You are on the main Avenue of Betterton. You can see the street stretching off to the distance in an east-west direction.
+[DATABANK]
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    6
+[REGION]                1
+[NAME]                  Magicians Shop
+[DESCRIPTION]           This is the Magicians Shop of Betterton, where you can buy all sorts of magical potions, baubles, and artifacts.
+[DATABANK]
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+

@@ -1,0 +1,16 @@
+[ID]                    200
+[NAME]                  Pie Baker
+[DESCRIPTION]           I am a baker!
+[DATABANK]
+encumbrance             0
+maxencumbrance          2000
+weapon                  0
+defaultweapon           100
+experience              0
+giveexperience          10
+[/DATABANK]
+[COMMANDS]
+[/COMMANDS]
+[LOGICS]
+glarepie
+[/LOGICS]

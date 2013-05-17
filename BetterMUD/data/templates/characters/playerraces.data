@@ -1,0 +1,103 @@
+[ID]                    1
+[NAME]                  Human
+[DESCRIPTION]           You are a plain old boring human. Deal with it.
+[DATABANK]
+encumbrance             0
+maxencumbrance          2000
+weapon                  0
+defaultweapon           100
+hitpoints               20
+maxhitpoints            20
+dodging                 0
+experience              0
+giveexperience          10
+[/DATABANK]
+[COMMANDS]
+[/COMMANDS]
+[LOGICS]
+cantreceiveitems encumbrance armaments combat
+[/LOGICS]
+
+
+[ID]                    2
+[NAME]                  Elf
+[DESCRIPTION]           You're an elf.
+[DATABANK]
+encumbrance             0
+maxencumbrance          1800
+weapon                  0
+defaultweapon           100
+hitpoints               18
+maxhitpoints            18
+dodging                 5
+experience              0
+giveexperience          10
+[/DATABANK]
+[COMMANDS]
+[/COMMANDS]
+[LOGICS]
+cantreceiveitems encumbrance armaments combat
+[/LOGICS]
+
+[ID]                    3
+[NAME]                  Dwarf
+[DESCRIPTION]           You're a Dwarf.
+[DATABANK]
+encumbrance             0
+maxencumbrance          2400
+weapon                  0
+defaultweapon           100
+hitpoints               24
+maxhitpoints            24
+dodging                 -5
+experience              0
+giveexperience          10
+[/DATABANK]
+[COMMANDS]
+[/COMMANDS]
+[LOGICS]
+cantreceiveitems encumbrance armaments combat
+[/LOGICS]
+
+[ID]                    4
+[NAME]                  Pie
+[DESCRIPTION]           You're a PIE!!!!.
+[DATABANK]
+encumbrance             0
+maxencumbrance          1000
+weapon                  0
+defaultweapon           100
+hitpoints               20
+maxhitpoints            20
+dodging                 0
+experience              0
+giveexperience          10
+[/DATABANK]
+[COMMANDS]
+[/COMMANDS]
+[LOGICS]
+cantreceiveitems encumbrance armaments combat
+[/LOGICS]
+
+
+[ID]                    5
+[NAME]                  Goblin
+[DESCRIPTION]           BLARGLE FAZZLEBOOP!!!
+[DATABANK]
+encumbrance             0
+maxencumbrance          1800
+weapon                  0
+defaultweapon           100
+mana                    25
+maxmana                 25
+hitpoints               19
+maxhitpoints            19
+dodging                 5
+experience              0
+giveexperience          10
+[/DATABANK]
+[COMMANDS]
+[/COMMANDS]
+[LOGICS]
+cantreceiveitems encumbrance armaments combat
+[/LOGICS]

@@ -1,0 +1,84 @@
+[ID]                    50
+[NAME]                  Fountain
+[DESCRIPTION]           This is a large bubbling fountain, made of granite and marble.
+[ISQUANTITY]            0
+[QUANTITY]              1
+[DATABANK]
+weight                  1000000
+arms                    0
+[/DATABANK]
+[LOGICS]
+cantget
+[/LOGICS]
+
+
+[ID]                    51
+[NAME]                  Pie
+[DESCRIPTION]           A BIG <#FFFF00>CUSTARD PIE<$reset>
+[ISQUANTITY]            0
+[QUANTITY]              1
+[DATABANK]
+value                   20
+weight                  300
+arms                    0
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+
+[ID]                    52
+[NAME]                  Oven
+[DESCRIPTION]           A BIG <#FFFF00>OVEN<$reset>
+[ISQUANTITY]            0
+[QUANTITY]              1
+[DATABANK]
+weight                  1000000
+arms                    0
+[/DATABANK]
+[LOGICS]
+cantget
+[/LOGICS]
+
+
+
+[ID]                    54
+[NAME]                  Scroll of Uberweight
+[DESCRIPTION]           This scroll contains the spell of Uberweight on it.
+[ISQUANTITY]            0
+[QUANTITY]              1
+[DATABANK]
+value                   100
+weight                  50
+arms                    0
+[/DATABANK]
+[LOGICS]
+canread uberweightscroll
+[/LOGICS]
+
+
+[ID]                    55
+[NAME]                  Small Healing Potion
+[DESCRIPTION]           This is a small healing potion.
+[ISQUANTITY]            0
+[QUANTITY]              1
+[DATABANK]
+value                   10
+weight                  50
+arms                    0
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+
+[ID]                    56
+[NAME]                  Dwarven Mine Pass
+[DESCRIPTION]           This allows entrance to the Dwarven Mines.
+[ISQUANTITY]            0
+[QUANTITY]              1
+[DATABANK]
+value                   100
+weight                  50
+arms                    0
+[/DATABANK]
+[LOGICS]
+[/LOGICS]

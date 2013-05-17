@@ -1,0 +1,20 @@
+[ID]                    100
+[REGION]                2
+[NAME]                  Mine Entrance
+[DESCRIPTION]           Entrance to the Dwarven Mines
+[ENTRY]
+    [STARTROOM]             2
+    [DIRECTION]             North
+    [DESTROOM]              100
+[/ENTRY]
+[ENTRY]
+    [STARTROOM]             100
+    [DIRECTION]             South
+    [DESTROOM]              2
+[/ENTRY]
+[/ENTRIES]
+[DATABANK]
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+

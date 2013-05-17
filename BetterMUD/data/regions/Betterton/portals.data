@@ -1,0 +1,100 @@
+[ID]                    1
+[REGION]                1
+[NAME]                  Garden Path
+[DESCRIPTION]           This is a plain garden pathway.
+[ENTRY]
+    [STARTROOM]             1
+    [DIRECTION]             North
+    [DESTROOM]              2
+[/ENTRY]
+[ENTRY]
+    [STARTROOM]             2
+    [DIRECTION]             South
+    [DESTROOM]              1
+[/ENTRY]
+[/ENTRIES]
+[DATABANK]
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    2
+[REGION]                1
+[NAME]                  Stone Path
+[DESCRIPTION]           This is a plain stone pathway.
+[ENTRY]
+    [STARTROOM]             1
+    [DIRECTION]             South
+    [DESTROOM]              3
+[/ENTRY]
+[ENTRY]
+    [STARTROOM]             3
+    [DIRECTION]             North
+    [DESTROOM]              1
+[/ENTRY]
+[/ENTRIES]
+[DATABANK]
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    3
+[REGION]                1
+[NAME]                  Bakery Door
+[DESCRIPTION]           This is doorway leading to the bakery
+[ENTRY]
+    [STARTROOM]             1
+    [DIRECTION]             East
+    [DESTROOM]              4
+[/ENTRY]
+[ENTRY]
+    [STARTROOM]             4
+    [DIRECTION]             West
+    [DESTROOM]              1
+[/ENTRY]
+[/ENTRIES]
+[DATABANK]
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    4
+[REGION]                1
+[NAME]                  Avenue
+[DESCRIPTION]           This is a cobbled stone pathway.
+[ENTRY]
+    [STARTROOM]             1
+    [DIRECTION]             West
+    [DESTROOM]              5
+[/ENTRY]
+[ENTRY]
+    [STARTROOM]             5
+    [DIRECTION]             East
+    [DESTROOM]              1
+[/ENTRY]
+[/ENTRIES]
+[DATABANK]
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    5
+[REGION]                1
+[NAME]                  Magicians Door
+[DESCRIPTION]           A simple wooden doorway.
+[ENTRY]
+    [STARTROOM]             5
+    [DIRECTION]             South
+    [DESTROOM]              6
+[/ENTRY]
+[ENTRY]
+    [STARTROOM]             6
+    [DIRECTION]             North
+    [DESTROOM]              5
+[/ENTRY]
+[/ENTRIES]
+[DATABANK]
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+

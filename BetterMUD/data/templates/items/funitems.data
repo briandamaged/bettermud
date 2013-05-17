@@ -1,0 +1,11 @@
+[ID]                    300
+[NAME]                  Mountain Dew
+[DESCRIPTION]           This is your salvation.
+[ISQUANTITY]            0
+[QUANTITY]              1
+[DATABANK]
+weight                  200
+arms                    0
+[/DATABANK]
+[LOGICS]
+[/LOGICS]

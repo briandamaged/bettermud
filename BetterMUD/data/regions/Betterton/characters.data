@@ -1,0 +1,41 @@
+[ID]                    3
+[NAME]                  Magician Keeper
+[DESCRIPTION]           Blah blah blah
+[ROOM]                  6
+[REGION]                1
+[TEMPLATEID]            300
+[ACCOUNT]               0
+[QUIETMODE]             0
+[VERBOSEMODE]           1
+[DATABANK]
+[/DATABANK]
+[COMMANDS]
+[/COMMANDS]
+[LOGICS]
+bettertonmagicianshop
+[DATA]
+[/DATA]
+[/LOGICS]
+
+
+[ITEMS]
+[ITEM]
+[ID]                    84
+[NAME]                  <#> Copper Coins
+[DESCRIPTION]           These copper coins are small and dirty, they don't have much value.
+[ROOM]                  3
+[REGION]                0
+[ISQUANTITY]            1
+[QUANTITY]              830
+[TEMPLATEID]            1
+[DATABANK]
+arms                    0
+currency                1
+value                   1
+weight                  1
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+[/ITEM]
+[/ITEMS]
+

@@ -1,0 +1,282 @@
+[ID]                    16
+[NAME]                  Fountain
+[DESCRIPTION]           This is a large bubbling fountain, made of granite and marble.
+[ROOM]                  1
+[REGION]                1
+[ISQUANTITY]            0
+[QUANTITY]              1
+[TEMPLATEID]            50
+[DATABANK]
+arms                    0
+weight                  1000000
+[/DATABANK]
+[LOGICS]
+cantget
+[DATA]
+[/DATA]
+[/LOGICS]
+
+[ID]                    19
+[NAME]                  <#> Copper Coins
+[DESCRIPTION]           These copper coins are small and dirty, they don't have much value.
+[ROOM]                  1
+[REGION]                1
+[ISQUANTITY]            1
+[QUANTITY]              8281
+[TEMPLATEID]            1
+[DATABANK]
+arms                    0
+currency                1
+value                   1
+weight                  1
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    36
+[NAME]                  <#> Copper Coins
+[DESCRIPTION]           These copper coins are small and dirty, they don't have much value.
+[ROOM]                  6
+[REGION]                1
+[ISQUANTITY]            1
+[QUANTITY]              110
+[TEMPLATEID]            1
+[DATABANK]
+arms                    0
+currency                1
+value                   1
+weight                  1
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    45
+[NAME]                  Small Healing Potion
+[DESCRIPTION]           This is a small healing potion.
+[ROOM]                  6
+[REGION]                1
+[ISQUANTITY]            0
+[QUANTITY]              1
+[TEMPLATEID]            55
+[DATABANK]
+arms                    0
+value                   10
+weight                  50
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    47
+[NAME]                  Small Healing Potion
+[DESCRIPTION]           This is a small healing potion.
+[ROOM]                  6
+[REGION]                1
+[ISQUANTITY]            0
+[QUANTITY]              1
+[TEMPLATEID]            55
+[DATABANK]
+arms                    0
+value                   10
+weight                  50
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    49
+[NAME]                  Small Healing Potion
+[DESCRIPTION]           This is a small healing potion.
+[ROOM]                  6
+[REGION]                1
+[ISQUANTITY]            0
+[QUANTITY]              1
+[TEMPLATEID]            55
+[DATABANK]
+arms                    0
+value                   10
+weight                  50
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    51
+[NAME]                  Small Healing Potion
+[DESCRIPTION]           This is a small healing potion.
+[ROOM]                  6
+[REGION]                1
+[ISQUANTITY]            0
+[QUANTITY]              1
+[TEMPLATEID]            55
+[DATABANK]
+arms                    0
+value                   10
+weight                  50
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    53
+[NAME]                  Small Healing Potion
+[DESCRIPTION]           This is a small healing potion.
+[ROOM]                  6
+[REGION]                1
+[ISQUANTITY]            0
+[QUANTITY]              1
+[TEMPLATEID]            55
+[DATABANK]
+arms                    0
+value                   10
+weight                  50
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    55
+[NAME]                  Small Healing Potion
+[DESCRIPTION]           This is a small healing potion.
+[ROOM]                  6
+[REGION]                1
+[ISQUANTITY]            0
+[QUANTITY]              1
+[TEMPLATEID]            55
+[DATABANK]
+arms                    0
+value                   10
+weight                  50
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    57
+[NAME]                  Small Healing Potion
+[DESCRIPTION]           This is a small healing potion.
+[ROOM]                  6
+[REGION]                1
+[ISQUANTITY]            0
+[QUANTITY]              1
+[TEMPLATEID]            55
+[DATABANK]
+arms                    0
+value                   10
+weight                  50
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    59
+[NAME]                  Small Healing Potion
+[DESCRIPTION]           This is a small healing potion.
+[ROOM]                  6
+[REGION]                1
+[ISQUANTITY]            0
+[QUANTITY]              1
+[TEMPLATEID]            55
+[DATABANK]
+arms                    0
+value                   10
+weight                  50
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    61
+[NAME]                  Small Healing Potion
+[DESCRIPTION]           This is a small healing potion.
+[ROOM]                  6
+[REGION]                1
+[ISQUANTITY]            0
+[QUANTITY]              1
+[TEMPLATEID]            55
+[DATABANK]
+arms                    0
+value                   10
+weight                  50
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    63
+[NAME]                  Small Healing Potion
+[DESCRIPTION]           This is a small healing potion.
+[ROOM]                  6
+[REGION]                1
+[ISQUANTITY]            0
+[QUANTITY]              1
+[TEMPLATEID]            55
+[DATABANK]
+arms                    0
+value                   10
+weight                  50
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    65
+[NAME]                  Small Healing Potion
+[DESCRIPTION]           This is a small healing potion.
+[ROOM]                  6
+[REGION]                1
+[ISQUANTITY]            0
+[QUANTITY]              1
+[TEMPLATEID]            55
+[DATABANK]
+arms                    0
+value                   10
+weight                  50
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    67
+[NAME]                  Small Healing Potion
+[DESCRIPTION]           This is a small healing potion.
+[ROOM]                  6
+[REGION]                1
+[ISQUANTITY]            0
+[QUANTITY]              1
+[TEMPLATEID]            55
+[DATABANK]
+arms                    0
+value                   10
+weight                  50
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    69
+[NAME]                  Small Healing Potion
+[DESCRIPTION]           This is a small healing potion.
+[ROOM]                  6
+[REGION]                1
+[ISQUANTITY]            0
+[QUANTITY]              1
+[TEMPLATEID]            55
+[DATABANK]
+arms                    0
+value                   10
+weight                  50
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    85
+[NAME]                  Scroll of Uberweight
+[DESCRIPTION]           This scroll contains the spell of Uberweight on it.
+[ROOM]                  1
+[REGION]                1
+[ISQUANTITY]            0
+[QUANTITY]              1
+[TEMPLATEID]            54
+[DATABANK]
+arms                    0
+value                   100
+weight                  50
+[/DATABANK]
+[LOGICS]
+canread
+[DATA]
+[/DATA]
+uberweightscroll
+[DATA]
+[/DATA]
+[/LOGICS]
+

@@ -1,0 +1,1 @@
+"""This file is here to make python treat the /data/logic/portals directory as a package"""

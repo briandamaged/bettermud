@@ -1,0 +1,48 @@
+[ID]                    400
+[NAME]                  Sword
+[DESCRIPTION]           A dull sword
+[ISQUANTITY]            0
+[QUANTITY]              1
+[DATABANK]
+value                   100
+weight                  500
+arms                    1
+mindamage               2
+maxdamage               6
+accuracy                60
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+[ID]                    401
+[NAME]                  Knife
+[DESCRIPTION]           A dull knife
+[ISQUANTITY]            0
+[QUANTITY]              1
+[DATABANK]
+value                   50
+weight                  200
+arms                    1
+mindamage               1
+maxdamage               4
+accuracy                70
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+
+[ID]                    402
+[NAME]                  Uzi
+[DESCRIPTION]           A powerful Uzi
+[ISQUANTITY]            0
+[QUANTITY]              1
+[DATABANK]
+value                   50
+weight                  200
+arms                    1
+mindamage               10
+maxdamage               50
+accuracy                50
+[/DATABANK]
+[LOGICS]
+[/LOGICS]

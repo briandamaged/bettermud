@@ -1,0 +1,16 @@
+[ID]                    10
+[NAME]                  Dwarven Mine Pass
+[DESCRIPTION]           This allows entrance to the Dwarven Mines.
+[ROOM]                  100
+[REGION]                2
+[ISQUANTITY]            0
+[QUANTITY]              1
+[TEMPLATEID]            56
+[DATABANK]
+arms                    0
+value                   100
+weight                  50
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+

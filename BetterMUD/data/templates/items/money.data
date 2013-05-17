@@ -1,0 +1,28 @@
+[ID]                    1
+[NAME]                  <#> Copper Coins
+[DESCRIPTION]           These copper coins are small and dirty, they don't have much value.
+[ISQUANTITY]            1
+[QUANTITY]              1
+[DATABANK]
+value                   1
+currency                1
+weight                  1
+arms                    0
+[/DATABANK]
+[LOGICS]
+[/LOGICS]
+
+
+[ID]                    2
+[NAME]                  <#> Silver Coins
+[DESCRIPTION]           These silver coins are small, they don't have much value.
+[ISQUANTITY]            1
+[QUANTITY]              1
+[DATABANK]
+value                   10
+currency                1
+weight                  1
+arms                    0
+[/DATABANK]
+[LOGICS]
+[/LOGICS]

@@ -1,0 +1,26 @@
+<#FF0000>
+            ######  ####### ####### ####### ####### ######
+            #     # #          #       #    #       #     #
+            #     # #          #       #    #       #     #
+            ######  #####      #       #    #####   ######
+            #     # #          #       #    #       #   #
+            #     # #          #       #    #       #    #
+            ######  #######    #       #    ####### #     #
+
+                        #     # #     # ######
+                        ##   ## #     # #     #
+                        # # # # #     # #     #
+                        #  #  # #     # #     #
+                        #     # #     # #     #
+                        #     # #     # #     #
+                        #     #  #####  ######
+
+<#FFFFFF>Welcome to BetterMUD v1.0! If you are a new user, type "new" at the prompt
+to create a new account. If not, just enter your user name and password to
+log in.
+
+<#7F7F7F>If you have any problems or questions, please email the administrator at
+RonPenton@Hotmail.com
+Please prefix your email titles with <#FF0000>MUD BOOK
+
+<#00FF00>Your Name: <#FFFFFF>

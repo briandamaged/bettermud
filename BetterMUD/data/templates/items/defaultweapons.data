@@ -1,0 +1,15 @@
+[ID]                    100
+[NAME]                  fists
+[DESCRIPTION]           blah blah, not important
+[ISQUANTITY]            0
+[QUANTITY]              1
+[DATABANK]
+weight                  100
+arms                    1
+mindamage               1
+maxdamage               3
+accuracy                50
+[/DATABANK]
+[LOGICS]
+cantget
+[/LOGICS]

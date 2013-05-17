@@ -1,0 +1,10 @@
+[ID]                    2
+[NAME]                  Dwarven Mines
+[DESCRIPTION]           You are in the Dwarven mines, a large and ancient collection of tunnels.
+[DATABANK]
+[/DATABANK]
+[LOGICS]
+noelves
+[DATA]
+[/DATA]
+[/LOGICS]
