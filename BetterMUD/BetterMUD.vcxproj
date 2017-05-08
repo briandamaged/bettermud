@@ -9,115 +9,154 @@
       <Configuration>Release</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{4A30EAAC-E6B1-44EA-B221-0835608EBD63}</ProjectGuid>
+    <ProjectGuid>{A12BAE9B-363D-496C-B0DC-D7B5331E824C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
+    <RootNamespace>BetterMUD</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup>
-    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>Debug\</OutDir>
-    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>Release\</OutDir>
-    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <MinimalRebuild>true</MinimalRebuild>
-      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <PrecompiledHeader />
-      <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <AdditionalIncludeDirectories>E:\Projects\bettermud_JAM\Libraries;$(PYTHON)\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Libraries;$(PYTHON)\Include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>ws2_32.lib;python27.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(OutDir)BetterMUD.exe</OutputFile>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)BetterMUD.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
-      <TargetMachine>MachineX86</TargetMachine>
-      <AdditionalLibraryDirectories>$(PYTHON)\libs\</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(PYTHON)\libs</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Libraries;$(PYTHON)\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(PYTHON)\libs</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <Optimization>MaxSpeed</Optimization>
-      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <OmitFramePointers>true</OmitFramePointers>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <StringPooling>true</StringPooling>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <PrecompiledHeader />
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalIncludeDirectories>E:\Projects\bettermud_JAM\Libraries;$(PYTHON)\include</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Libraries;$(PYTHON)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>ws2_32.lib;python27.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(OutDir)BetterMUD.exe</OutputFile>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
-      <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <TargetMachine>MachineX86</TargetMachine>
-      <AdditionalLibraryDirectories>$(PYTHON)\libs\</AdditionalLibraryDirectories>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(PYTHON)\libs</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Libraries;$(PYTHON)\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(PYTHON)\libs</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\Libraries\BasicLib\BasicLib.h" />
-    <ClInclude Include="..\Libraries\BasicLib\BasicLibFunctions.h" />
-    <ClInclude Include="..\Libraries\BasicLib\BasicLibLogger.h" />
-    <ClInclude Include="..\Libraries\BasicLib\BasicLibRandom.h" />
-    <ClInclude Include="..\Libraries\BasicLib\BasicLibString.h" />
-    <ClInclude Include="..\Libraries\BasicLib\BasicLibTime.h" />
-    <ClInclude Include="..\Libraries\BasicLib\BasicLibTypes.h" />
-    <ClInclude Include="..\Libraries\SocketLib\Connection.h" />
-    <ClInclude Include="..\Libraries\SocketLib\ConnectionHandler.h" />
-    <ClInclude Include="..\Libraries\SocketLib\ConnectionManager.h" />
-    <ClInclude Include="..\Libraries\SocketLib\ListeningManager.h" />
-    <ClInclude Include="..\Libraries\SocketLib\SocketLib.h" />
-    <ClInclude Include="..\Libraries\SocketLib\SocketLibErrors.h" />
-    <ClInclude Include="..\Libraries\SocketLib\SocketLibSocket.h" />
-    <ClInclude Include="..\Libraries\SocketLib\SocketLibSystem.h" />
-    <ClInclude Include="..\Libraries\SocketLib\SocketLibTypes.h" />
-    <ClInclude Include="..\Libraries\SocketLib\SocketSet.h" />
-    <ClInclude Include="..\Libraries\SocketLib\Telnet.h" />
-    <ClInclude Include="..\Libraries\ThreadLib\ThreadException.h" />
-    <ClInclude Include="..\Libraries\ThreadLib\ThreadLib.h" />
-    <ClInclude Include="..\Libraries\ThreadLib\ThreadLibFunctions.h" />
-    <ClInclude Include="..\Libraries\ThreadLib\ThreadLibMutex.h" />
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="BetterMUD\accessors\AccessorMacros.h" />
     <ClInclude Include="BetterMUD\accessors\Accessors.h" />
     <ClInclude Include="BetterMUD\accessors\AccountAccessor.h" />
@@ -166,20 +205,10 @@
     <ClInclude Include="BetterMUD\scripts\python\PythonScript.h" />
     <ClInclude Include="BetterMUD\scripts\python\PythonWrappers.h" />
     <ClInclude Include="BetterMUD\scripts\Script.h" />
+    <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Libraries\BasicLib\BasicLibRandom.cpp" />
-    <ClCompile Include="..\Libraries\BasicLib\BasicLibString.cpp" />
-    <ClCompile Include="..\Libraries\BasicLib\BasicLibTime.cpp" />
-    <ClCompile Include="..\Libraries\SocketLib\SocketLibErrors.cpp" />
-    <ClCompile Include="..\Libraries\SocketLib\SocketLibSocket.cpp" />
-    <ClCompile Include="..\Libraries\SocketLib\SocketLibSystem.cpp" />
-    <ClCompile Include="..\Libraries\SocketLib\SocketSet.cpp" />
-    <ClCompile Include="..\Libraries\SocketLib\Telnet.cpp" />
-    <ClCompile Include="..\Libraries\ThreadLib\ThreadLibFunctions.cpp" />
-    <ClCompile Include="BetterMUD.cpp">
-      <RuntimeLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MultiThreadedDebug</RuntimeLibrary>
-    </ClCompile>
+    <ClCompile Include="BetterMUD.cpp" />
     <ClCompile Include="BetterMUD\accessors\AccountAccessor.cpp" />
     <ClCompile Include="BetterMUD\accessors\CharacterAccessor.cpp" />
     <ClCompile Include="BetterMUD\accessors\GameAccessor.cpp" />
@@ -190,6 +219,7 @@
     <ClCompile Include="BetterMUD\databases\AccountDatabase.cpp" />
     <ClCompile Include="BetterMUD\databases\CharacterDatabase.cpp" />
     <ClCompile Include="BetterMUD\databases\CommandDatabase.cpp" />
+    <ClCompile Include="BetterMUD\databases\Databases.cpp" />
     <ClCompile Include="BetterMUD\databases\ItemDatabase.cpp" />
     <ClCompile Include="BetterMUD\databases\LogicDatabase.cpp" />
     <ClCompile Include="BetterMUD\databases\PortalDatabase.cpp" />
@@ -213,6 +243,17 @@
     <ClCompile Include="BetterMUD\scripts\python\PythonLogic.cpp" />
     <ClCompile Include="BetterMUD\scripts\python\PythonScript.cpp" />
     <ClCompile Include="BetterMUD\scripts\python\PythonWrappers.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Libraries\BasicLib\BasicLib.vcxproj">
+      <Project>{ed1addba-cb9b-42dd-b691-582666d35a99}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\SocketLib\SocketLib.vcxproj">
+      <Project>{15de84e4-0aea-498f-ae23-55afffa07032}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\ThreadLib\ThreadLib.vcxproj">
+      <Project>{a271d91f-ab10-428e-9fea-eeb2de2acc5f}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

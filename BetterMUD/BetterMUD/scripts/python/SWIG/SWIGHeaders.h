@@ -6,6 +6,7 @@
 // 
 // 
 
+#include <string>
 
 typedef unsigned long int entityid;
 typedef signed long int status;

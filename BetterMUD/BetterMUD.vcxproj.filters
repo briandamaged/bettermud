@@ -1,376 +1,294 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="BasicLib">
-      <UniqueIdentifier>{8aeee94d-36eb-4b1a-8b3b-fbf2f23b4c7f}</UniqueIdentifier>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="BetterMUD">
-      <UniqueIdentifier>{5ddc2764-b96d-4939-a977-367c01cfbe83}</UniqueIdentifier>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="BetterMUD\Entities">
-      <UniqueIdentifier>{5ca9883a-6180-4fb1-bc51-4dde8f7d980b}</UniqueIdentifier>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="BetterMUD\Scripts">
-      <UniqueIdentifier>{731d6064-d6ff-4c2b-8525-cf23eacce336}</UniqueIdentifier>
+    <Filter Include="Accessors">
+      <UniqueIdentifier>{e8b9f86c-a7c0-4eb4-9b2b-f13a72ce881c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="BetterMUD\Scripts\Python">
-      <UniqueIdentifier>{a5283d67-c52d-48bf-9f56-02eff8db2e7c}</UniqueIdentifier>
+    <Filter Include="Database">
+      <UniqueIdentifier>{d8f5f53e-cc28-4150-a0f0-931aec672d9f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="BetterMUD\Databases">
-      <UniqueIdentifier>{c8e3f19d-0a97-4693-b58e-16bdc0deb014}</UniqueIdentifier>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{30bb3c2c-1619-4a5e-8e69-8d264ce4474a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="BetterMUD\accessors">
-      <UniqueIdentifier>{06692159-3c60-407b-a60e-7ecb09df00d3}</UniqueIdentifier>
+    <Filter Include="Network">
+      <UniqueIdentifier>{333347ee-e880-4fdc-b5da-f370eec4e08e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="BetterMUD\network">
-      <UniqueIdentifier>{5467c233-ed21-4d10-b1ba-3fd5ecd22738}</UniqueIdentifier>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{3d9692f5-44e4-48d6-8af4-1640a11abd53}</UniqueIdentifier>
     </Filter>
-    <Filter Include="SocketLib">
-      <UniqueIdentifier>{1e0ba9cd-56a7-454e-b5fe-01baad4ea7e0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ThreadLib">
-      <UniqueIdentifier>{c4017713-d9b5-428a-a904-8155f47c782a}</UniqueIdentifier>
+    <Filter Include="Scripts\Python">
+      <UniqueIdentifier>{7201e50f-c796-49fa-be9b-cb5886488c55}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Libraries\BasicLib\BasicLib.h">
-      <Filter>BasicLib</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Libraries\BasicLib\BasicLibFunctions.h">
-      <Filter>BasicLib</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Libraries\BasicLib\BasicLibLogger.h">
-      <Filter>BasicLib</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Libraries\BasicLib\BasicLibRandom.h">
-      <Filter>BasicLib</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Libraries\BasicLib\BasicLibString.h">
-      <Filter>BasicLib</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Libraries\BasicLib\BasicLibTime.h">
-      <Filter>BasicLib</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Libraries\BasicLib\BasicLibTypes.h">
-      <Filter>BasicLib</Filter>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BetterMUD\Exception.h">
-      <Filter>BetterMUD</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BetterMUD\Game.h">
-      <Filter>BetterMUD</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\entities\Account.h">
-      <Filter>BetterMUD\Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\entities\Action.h">
-      <Filter>BetterMUD\Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\entities\Attributes.h">
-      <Filter>BetterMUD\Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\entities\Character.h">
-      <Filter>BetterMUD\Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\entities\DataEntity.h">
-      <Filter>BetterMUD\Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\entities\Entity.h">
-      <Filter>BetterMUD\Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\entities\Item.h">
-      <Filter>BetterMUD\Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\entities\LogicEntity.h">
-      <Filter>BetterMUD\Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\entities\Portal.h">
-      <Filter>BetterMUD\Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\entities\Region.h">
-      <Filter>BetterMUD\Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\entities\Room.h">
-      <Filter>BetterMUD\Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\scripts\CPPCommand.h">
-      <Filter>BetterMUD\Scripts</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\scripts\CPPCommands.h">
-      <Filter>BetterMUD\Scripts</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\scripts\Command.h">
-      <Filter>BetterMUD\Scripts</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\scripts\Logic.h">
-      <Filter>BetterMUD\Scripts</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\scripts\LogicCollection.h">
-      <Filter>BetterMUD\Scripts</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\scripts\Script.h">
-      <Filter>BetterMUD\Scripts</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\scripts\python\PythonCommand.h">
-      <Filter>BetterMUD\Scripts\Python</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\scripts\python\PythonHelpers.h">
-      <Filter>BetterMUD\Scripts\Python</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\scripts\python\PythonLogic.h">
-      <Filter>BetterMUD\Scripts\Python</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\scripts\python\PythonScript.h">
-      <Filter>BetterMUD\Scripts\Python</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\scripts\python\PythonWrappers.h">
-      <Filter>BetterMUD\Scripts\Python</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\databases\AccountDatabase.h">
-      <Filter>BetterMUD\Databases</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\databases\AllDatabases.h">
-      <Filter>BetterMUD\Databases</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\databases\CharacterDatabase.h">
-      <Filter>BetterMUD\Databases</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\databases\CommandDatabase.h">
-      <Filter>BetterMUD\Databases</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\databases\Databases.h">
-      <Filter>BetterMUD\Databases</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\databases\ItemDatabase.h">
-      <Filter>BetterMUD\Databases</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\databases\LogicDatabase.h">
-      <Filter>BetterMUD\Databases</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\databases\PortalDatabase.h">
-      <Filter>BetterMUD\Databases</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\databases\RegionDatabase.h">
-      <Filter>BetterMUD\Databases</Filter>
-    </ClInclude>
-    <ClInclude Include="BetterMUD\databases\RoomDatabase.h">
-      <Filter>BetterMUD\Databases</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BetterMUD\accessors\AccessorMacros.h">
-      <Filter>BetterMUD\accessors</Filter>
+      <Filter>Accessors</Filter>
     </ClInclude>
     <ClInclude Include="BetterMUD\accessors\Accessors.h">
-      <Filter>BetterMUD\accessors</Filter>
+      <Filter>Accessors</Filter>
     </ClInclude>
     <ClInclude Include="BetterMUD\accessors\AccountAccessor.h">
-      <Filter>BetterMUD\accessors</Filter>
+      <Filter>Accessors</Filter>
     </ClInclude>
     <ClInclude Include="BetterMUD\accessors\CharacterAccessor.h">
-      <Filter>BetterMUD\accessors</Filter>
+      <Filter>Accessors</Filter>
     </ClInclude>
     <ClInclude Include="BetterMUD\accessors\GameAccessor.h">
-      <Filter>BetterMUD\accessors</Filter>
+      <Filter>Accessors</Filter>
     </ClInclude>
     <ClInclude Include="BetterMUD\accessors\ItemAccessor.h">
-      <Filter>BetterMUD\accessors</Filter>
+      <Filter>Accessors</Filter>
     </ClInclude>
     <ClInclude Include="BetterMUD\accessors\PortalAccessor.h">
-      <Filter>BetterMUD\accessors</Filter>
+      <Filter>Accessors</Filter>
     </ClInclude>
     <ClInclude Include="BetterMUD\accessors\RegionAccessor.h">
-      <Filter>BetterMUD\accessors</Filter>
+      <Filter>Accessors</Filter>
     </ClInclude>
     <ClInclude Include="BetterMUD\accessors\RoomAccessor.h">
-      <Filter>BetterMUD\accessors</Filter>
+      <Filter>Accessors</Filter>
+    </ClInclude>
+    <ClInclude Include="BetterMUD\databases\AccountDatabase.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="BetterMUD\databases\AllDatabases.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="BetterMUD\databases\CharacterDatabase.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="BetterMUD\databases\CommandDatabase.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="BetterMUD\databases\Databases.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="BetterMUD\databases\ItemDatabase.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="BetterMUD\databases\LogicDatabase.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="BetterMUD\databases\PortalDatabase.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="BetterMUD\databases\RegionDatabase.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="BetterMUD\databases\RoomDatabase.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="BetterMUD\entities\Account.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="BetterMUD\entities\Action.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="BetterMUD\entities\Attributes.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="BetterMUD\entities\Character.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="BetterMUD\entities\DataEntity.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="BetterMUD\entities\Entity.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="BetterMUD\entities\Item.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="BetterMUD\entities\LogicEntity.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="BetterMUD\entities\Portal.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="BetterMUD\entities\Region.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="BetterMUD\entities\Room.h">
+      <Filter>Entities</Filter>
     </ClInclude>
     <ClInclude Include="BetterMUD\network\BetterTelnet.h">
-      <Filter>BetterMUD\network</Filter>
+      <Filter>Network</Filter>
     </ClInclude>
     <ClInclude Include="BetterMUD\network\TelnetGame.h">
-      <Filter>BetterMUD\network</Filter>
+      <Filter>Network</Filter>
     </ClInclude>
     <ClInclude Include="BetterMUD\network\TelnetLogon.h">
-      <Filter>BetterMUD\network</Filter>
+      <Filter>Network</Filter>
     </ClInclude>
     <ClInclude Include="BetterMUD\network\TelnetMenu.h">
-      <Filter>BetterMUD\network</Filter>
+      <Filter>Network</Filter>
     </ClInclude>
     <ClInclude Include="BetterMUD\network\TelnetReporter.h">
-      <Filter>BetterMUD\network</Filter>
+      <Filter>Network</Filter>
     </ClInclude>
-    <ClInclude Include="..\Libraries\SocketLib\Connection.h">
-      <Filter>SocketLib</Filter>
+    <ClInclude Include="BetterMUD\scripts\Command.h">
+      <Filter>Scripts</Filter>
     </ClInclude>
-    <ClInclude Include="..\Libraries\SocketLib\ConnectionHandler.h">
-      <Filter>SocketLib</Filter>
+    <ClInclude Include="BetterMUD\scripts\CPPCommand.h">
+      <Filter>Scripts</Filter>
     </ClInclude>
-    <ClInclude Include="..\Libraries\SocketLib\ConnectionManager.h">
-      <Filter>SocketLib</Filter>
+    <ClInclude Include="BetterMUD\scripts\CPPCommands.h">
+      <Filter>Scripts</Filter>
     </ClInclude>
-    <ClInclude Include="..\Libraries\SocketLib\ListeningManager.h">
-      <Filter>SocketLib</Filter>
+    <ClInclude Include="BetterMUD\scripts\Logic.h">
+      <Filter>Scripts</Filter>
     </ClInclude>
-    <ClInclude Include="..\Libraries\SocketLib\SocketLib.h">
-      <Filter>SocketLib</Filter>
+    <ClInclude Include="BetterMUD\scripts\LogicCollection.h">
+      <Filter>Scripts</Filter>
     </ClInclude>
-    <ClInclude Include="..\Libraries\SocketLib\SocketLibErrors.h">
-      <Filter>SocketLib</Filter>
+    <ClInclude Include="BetterMUD\scripts\Script.h">
+      <Filter>Scripts</Filter>
     </ClInclude>
-    <ClInclude Include="..\Libraries\SocketLib\SocketLibSocket.h">
-      <Filter>SocketLib</Filter>
+    <ClInclude Include="BetterMUD\scripts\python\PythonCommand.h">
+      <Filter>Scripts\Python</Filter>
     </ClInclude>
-    <ClInclude Include="..\Libraries\SocketLib\SocketLibSystem.h">
-      <Filter>SocketLib</Filter>
+    <ClInclude Include="BetterMUD\scripts\python\PythonHelpers.h">
+      <Filter>Scripts\Python</Filter>
     </ClInclude>
-    <ClInclude Include="..\Libraries\SocketLib\SocketLibTypes.h">
-      <Filter>SocketLib</Filter>
+    <ClInclude Include="BetterMUD\scripts\python\PythonLogic.h">
+      <Filter>Scripts\Python</Filter>
     </ClInclude>
-    <ClInclude Include="..\Libraries\SocketLib\SocketSet.h">
-      <Filter>SocketLib</Filter>
+    <ClInclude Include="BetterMUD\scripts\python\PythonScript.h">
+      <Filter>Scripts\Python</Filter>
     </ClInclude>
-    <ClInclude Include="..\Libraries\SocketLib\Telnet.h">
-      <Filter>SocketLib</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Libraries\ThreadLib\ThreadException.h">
-      <Filter>ThreadLib</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Libraries\ThreadLib\ThreadLib.h">
-      <Filter>ThreadLib</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Libraries\ThreadLib\ThreadLibFunctions.h">
-      <Filter>ThreadLib</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Libraries\ThreadLib\ThreadLibMutex.h">
-      <Filter>ThreadLib</Filter>
+    <ClInclude Include="BetterMUD\scripts\python\PythonWrappers.h">
+      <Filter>Scripts\Python</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Libraries\BasicLib\BasicLibRandom.cpp">
-      <Filter>BasicLib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Libraries\BasicLib\BasicLibString.cpp">
-      <Filter>BasicLib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Libraries\BasicLib\BasicLibTime.cpp">
-      <Filter>BasicLib</Filter>
+    <ClCompile Include="BetterMUD.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="BetterMUD\Game.cpp">
-      <Filter>BetterMUD</Filter>
-    </ClCompile>
-    <ClCompile Include="BetterMUD\entities\Account.cpp">
-      <Filter>BetterMUD\Entities</Filter>
-    </ClCompile>
-    <ClCompile Include="BetterMUD\entities\Action.cpp">
-      <Filter>BetterMUD\Entities</Filter>
-    </ClCompile>
-    <ClCompile Include="BetterMUD\entities\Character.cpp">
-      <Filter>BetterMUD\Entities</Filter>
-    </ClCompile>
-    <ClCompile Include="BetterMUD\entities\Item.cpp">
-      <Filter>BetterMUD\Entities</Filter>
-    </ClCompile>
-    <ClCompile Include="BetterMUD\entities\Portal.cpp">
-      <Filter>BetterMUD\Entities</Filter>
-    </ClCompile>
-    <ClCompile Include="BetterMUD\entities\Region.cpp">
-      <Filter>BetterMUD\Entities</Filter>
-    </ClCompile>
-    <ClCompile Include="BetterMUD\entities\Room.cpp">
-      <Filter>BetterMUD\Entities</Filter>
-    </ClCompile>
-    <ClCompile Include="BetterMUD\scripts\LogicCollection.cpp">
-      <Filter>BetterMUD\Scripts</Filter>
-    </ClCompile>
-    <ClCompile Include="BetterMUD\scripts\python\PythonHelpers.cpp">
-      <Filter>BetterMUD\Scripts\Python</Filter>
-    </ClCompile>
-    <ClCompile Include="BetterMUD\scripts\python\PythonLogic.cpp">
-      <Filter>BetterMUD\Scripts\Python</Filter>
-    </ClCompile>
-    <ClCompile Include="BetterMUD\scripts\python\PythonScript.cpp">
-      <Filter>BetterMUD\Scripts\Python</Filter>
-    </ClCompile>
-    <ClCompile Include="BetterMUD\scripts\python\PythonWrappers.cpp">
-      <Filter>BetterMUD\Scripts\Python</Filter>
-    </ClCompile>
-    <ClCompile Include="BetterMUD\databases\AccountDatabase.cpp">
-      <Filter>BetterMUD\Databases</Filter>
-    </ClCompile>
-    <ClCompile Include="BetterMUD\databases\CharacterDatabase.cpp">
-      <Filter>BetterMUD\Databases</Filter>
-    </ClCompile>
-    <ClCompile Include="BetterMUD\databases\CommandDatabase.cpp">
-      <Filter>BetterMUD\Databases</Filter>
-    </ClCompile>
-    <ClCompile Include="BetterMUD\databases\ItemDatabase.cpp">
-      <Filter>BetterMUD\Databases</Filter>
-    </ClCompile>
-    <ClCompile Include="BetterMUD\databases\LogicDatabase.cpp">
-      <Filter>BetterMUD\Databases</Filter>
-    </ClCompile>
-    <ClCompile Include="BetterMUD\databases\PortalDatabase.cpp">
-      <Filter>BetterMUD\Databases</Filter>
-    </ClCompile>
-    <ClCompile Include="BetterMUD\databases\RegionDatabase.cpp">
-      <Filter>BetterMUD\Databases</Filter>
-    </ClCompile>
-    <ClCompile Include="BetterMUD\databases\RoomDatabase.cpp">
-      <Filter>BetterMUD\Databases</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="BetterMUD\accessors\AccountAccessor.cpp">
-      <Filter>BetterMUD\accessors</Filter>
+      <Filter>Accessors</Filter>
     </ClCompile>
     <ClCompile Include="BetterMUD\accessors\CharacterAccessor.cpp">
-      <Filter>BetterMUD\accessors</Filter>
+      <Filter>Accessors</Filter>
     </ClCompile>
     <ClCompile Include="BetterMUD\accessors\GameAccessor.cpp">
-      <Filter>BetterMUD\accessors</Filter>
+      <Filter>Accessors</Filter>
     </ClCompile>
     <ClCompile Include="BetterMUD\accessors\ItemAccessor.cpp">
-      <Filter>BetterMUD\accessors</Filter>
+      <Filter>Accessors</Filter>
     </ClCompile>
     <ClCompile Include="BetterMUD\accessors\PortalAccessor.cpp">
-      <Filter>BetterMUD\accessors</Filter>
+      <Filter>Accessors</Filter>
     </ClCompile>
     <ClCompile Include="BetterMUD\accessors\RegionAccessor.cpp">
-      <Filter>BetterMUD\accessors</Filter>
+      <Filter>Accessors</Filter>
     </ClCompile>
     <ClCompile Include="BetterMUD\accessors\RoomAccessor.cpp">
-      <Filter>BetterMUD\accessors</Filter>
+      <Filter>Accessors</Filter>
+    </ClCompile>
+    <ClCompile Include="BetterMUD\databases\AccountDatabase.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="BetterMUD\databases\CharacterDatabase.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="BetterMUD\databases\CommandDatabase.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="BetterMUD\databases\Databases.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="BetterMUD\databases\ItemDatabase.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="BetterMUD\databases\LogicDatabase.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="BetterMUD\databases\PortalDatabase.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="BetterMUD\databases\RegionDatabase.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="BetterMUD\databases\RoomDatabase.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="BetterMUD\entities\Account.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="BetterMUD\entities\Action.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="BetterMUD\entities\Character.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="BetterMUD\entities\Item.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="BetterMUD\entities\Portal.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="BetterMUD\entities\Region.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="BetterMUD\entities\Room.cpp">
+      <Filter>Entities</Filter>
     </ClCompile>
     <ClCompile Include="BetterMUD\network\BetterTelnet.cpp">
-      <Filter>BetterMUD\network</Filter>
+      <Filter>Network</Filter>
     </ClCompile>
     <ClCompile Include="BetterMUD\network\TelnetGame.cpp">
-      <Filter>BetterMUD\network</Filter>
+      <Filter>Network</Filter>
     </ClCompile>
     <ClCompile Include="BetterMUD\network\TelnetLogon.cpp">
-      <Filter>BetterMUD\network</Filter>
+      <Filter>Network</Filter>
     </ClCompile>
     <ClCompile Include="BetterMUD\network\TelnetMenu.cpp">
-      <Filter>BetterMUD\network</Filter>
+      <Filter>Network</Filter>
     </ClCompile>
     <ClCompile Include="BetterMUD\network\TelnetReporter.cpp">
-      <Filter>BetterMUD\network</Filter>
+      <Filter>Network</Filter>
     </ClCompile>
-    <ClCompile Include="..\Libraries\SocketLib\SocketLibErrors.cpp">
-      <Filter>SocketLib</Filter>
+    <ClCompile Include="BetterMUD\scripts\LogicCollection.cpp">
+      <Filter>Scripts</Filter>
     </ClCompile>
-    <ClCompile Include="..\Libraries\SocketLib\SocketLibSocket.cpp">
-      <Filter>SocketLib</Filter>
+    <ClCompile Include="BetterMUD\scripts\python\PythonHelpers.cpp">
+      <Filter>Scripts\Python</Filter>
     </ClCompile>
-    <ClCompile Include="..\Libraries\SocketLib\SocketLibSystem.cpp">
-      <Filter>SocketLib</Filter>
+    <ClCompile Include="BetterMUD\scripts\python\PythonLogic.cpp">
+      <Filter>Scripts\Python</Filter>
     </ClCompile>
-    <ClCompile Include="..\Libraries\SocketLib\SocketSet.cpp">
-      <Filter>SocketLib</Filter>
+    <ClCompile Include="BetterMUD\scripts\python\PythonScript.cpp">
+      <Filter>Scripts\Python</Filter>
     </ClCompile>
-    <ClCompile Include="..\Libraries\SocketLib\Telnet.cpp">
-      <Filter>SocketLib</Filter>
+    <ClCompile Include="BetterMUD\scripts\python\PythonWrappers.cpp">
+      <Filter>Scripts\Python</Filter>
     </ClCompile>
-    <ClCompile Include="..\Libraries\ThreadLib\ThreadLibFunctions.cpp">
-      <Filter>ThreadLib</Filter>
-    </ClCompile>
-    <ClCompile Include="BetterMUD.cpp" />
   </ItemGroup>
 </Project>

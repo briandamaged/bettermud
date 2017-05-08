@@ -133,7 +133,7 @@ public:
 
     entity& create( entityid p_id )
     {
-        if( this->m_container.size() <= p_id )
+        if( (entityid)this->m_container.size() <= p_id )
             this->m_container.resize( p_id + 1 );
 
         this->m_container[p_id].SetID( p_id );

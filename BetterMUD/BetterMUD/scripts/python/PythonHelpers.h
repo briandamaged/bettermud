@@ -63,7 +63,7 @@ public:
 
     bool Has( const std::string& p_name ) const 
     {
-        return (bool)PyObject_HasAttrString( m_object, const_cast<char*>(p_name.c_str()) );
+        return (bool)(PyObject_HasAttrString( m_object, const_cast<char*>(p_name.c_str()) ) != 0);
     }
 
     std::string GetNameOfClass();
