@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4A30EAAC-E6B1-44EA-B221-0835608EBD63}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>E:\Projects\bettermud_JAM\Libraries;$(PYTHON)\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;python27.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)BetterMUD.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)BetterMUD.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(PYTHON)\libs\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>E:\Projects\bettermud_JAM\Libraries;$(PYTHON)\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;python27.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)BetterMUD.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(PYTHON)\libs\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Libraries\BasicLib\BasicLib.h" />
+    <ClInclude Include="..\Libraries\BasicLib\BasicLibFunctions.h" />
+    <ClInclude Include="..\Libraries\BasicLib\BasicLibLogger.h" />
+    <ClInclude Include="..\Libraries\BasicLib\BasicLibRandom.h" />
+    <ClInclude Include="..\Libraries\BasicLib\BasicLibString.h" />
+    <ClInclude Include="..\Libraries\BasicLib\BasicLibTime.h" />
+    <ClInclude Include="..\Libraries\BasicLib\BasicLibTypes.h" />
+    <ClInclude Include="..\Libraries\SocketLib\Connection.h" />
+    <ClInclude Include="..\Libraries\SocketLib\ConnectionHandler.h" />
+    <ClInclude Include="..\Libraries\SocketLib\ConnectionManager.h" />
+    <ClInclude Include="..\Libraries\SocketLib\ListeningManager.h" />
+    <ClInclude Include="..\Libraries\SocketLib\SocketLib.h" />
+    <ClInclude Include="..\Libraries\SocketLib\SocketLibErrors.h" />
+    <ClInclude Include="..\Libraries\SocketLib\SocketLibSocket.h" />
+    <ClInclude Include="..\Libraries\SocketLib\SocketLibSystem.h" />
+    <ClInclude Include="..\Libraries\SocketLib\SocketLibTypes.h" />
+    <ClInclude Include="..\Libraries\SocketLib\SocketSet.h" />
+    <ClInclude Include="..\Libraries\SocketLib\Telnet.h" />
+    <ClInclude Include="..\Libraries\ThreadLib\ThreadException.h" />
+    <ClInclude Include="..\Libraries\ThreadLib\ThreadLib.h" />
+    <ClInclude Include="..\Libraries\ThreadLib\ThreadLibFunctions.h" />
+    <ClInclude Include="..\Libraries\ThreadLib\ThreadLibMutex.h" />
+    <ClInclude Include="BetterMUD\accessors\AccessorMacros.h" />
+    <ClInclude Include="BetterMUD\accessors\Accessors.h" />
+    <ClInclude Include="BetterMUD\accessors\AccountAccessor.h" />
+    <ClInclude Include="BetterMUD\accessors\CharacterAccessor.h" />
+    <ClInclude Include="BetterMUD\accessors\GameAccessor.h" />
+    <ClInclude Include="BetterMUD\accessors\ItemAccessor.h" />
+    <ClInclude Include="BetterMUD\accessors\PortalAccessor.h" />
+    <ClInclude Include="BetterMUD\accessors\RegionAccessor.h" />
+    <ClInclude Include="BetterMUD\accessors\RoomAccessor.h" />
+    <ClInclude Include="BetterMUD\databases\AccountDatabase.h" />
+    <ClInclude Include="BetterMUD\databases\AllDatabases.h" />
+    <ClInclude Include="BetterMUD\databases\CharacterDatabase.h" />
+    <ClInclude Include="BetterMUD\databases\CommandDatabase.h" />
+    <ClInclude Include="BetterMUD\databases\Databases.h" />
+    <ClInclude Include="BetterMUD\databases\ItemDatabase.h" />
+    <ClInclude Include="BetterMUD\databases\LogicDatabase.h" />
+    <ClInclude Include="BetterMUD\databases\PortalDatabase.h" />
+    <ClInclude Include="BetterMUD\databases\RegionDatabase.h" />
+    <ClInclude Include="BetterMUD\databases\RoomDatabase.h" />
+    <ClInclude Include="BetterMUD\entities\Account.h" />
+    <ClInclude Include="BetterMUD\entities\Action.h" />
+    <ClInclude Include="BetterMUD\entities\Attributes.h" />
+    <ClInclude Include="BetterMUD\entities\Character.h" />
+    <ClInclude Include="BetterMUD\entities\DataEntity.h" />
+    <ClInclude Include="BetterMUD\entities\Entity.h" />
+    <ClInclude Include="BetterMUD\entities\Item.h" />
+    <ClInclude Include="BetterMUD\entities\LogicEntity.h" />
+    <ClInclude Include="BetterMUD\entities\Portal.h" />
+    <ClInclude Include="BetterMUD\entities\Region.h" />
+    <ClInclude Include="BetterMUD\entities\Room.h" />
+    <ClInclude Include="BetterMUD\Exception.h" />
+    <ClInclude Include="BetterMUD\Game.h" />
+    <ClInclude Include="BetterMUD\network\BetterTelnet.h" />
+    <ClInclude Include="BetterMUD\network\TelnetGame.h" />
+    <ClInclude Include="BetterMUD\network\TelnetLogon.h" />
+    <ClInclude Include="BetterMUD\network\TelnetMenu.h" />
+    <ClInclude Include="BetterMUD\network\TelnetReporter.h" />
+    <ClInclude Include="BetterMUD\scripts\Command.h" />
+    <ClInclude Include="BetterMUD\scripts\CPPCommand.h" />
+    <ClInclude Include="BetterMUD\scripts\CPPCommands.h" />
+    <ClInclude Include="BetterMUD\scripts\Logic.h" />
+    <ClInclude Include="BetterMUD\scripts\LogicCollection.h" />
+    <ClInclude Include="BetterMUD\scripts\python\PythonCommand.h" />
+    <ClInclude Include="BetterMUD\scripts\python\PythonHelpers.h" />
+    <ClInclude Include="BetterMUD\scripts\python\PythonLogic.h" />
+    <ClInclude Include="BetterMUD\scripts\python\PythonScript.h" />
+    <ClInclude Include="BetterMUD\scripts\python\PythonWrappers.h" />
+    <ClInclude Include="BetterMUD\scripts\Script.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Libraries\BasicLib\BasicLibRandom.cpp" />
+    <ClCompile Include="..\Libraries\BasicLib\BasicLibString.cpp" />
+    <ClCompile Include="..\Libraries\BasicLib\BasicLibTime.cpp" />
+    <ClCompile Include="..\Libraries\SocketLib\SocketLibErrors.cpp" />
+    <ClCompile Include="..\Libraries\SocketLib\SocketLibSocket.cpp" />
+    <ClCompile Include="..\Libraries\SocketLib\SocketLibSystem.cpp" />
+    <ClCompile Include="..\Libraries\SocketLib\SocketSet.cpp" />
+    <ClCompile Include="..\Libraries\SocketLib\Telnet.cpp" />
+    <ClCompile Include="..\Libraries\ThreadLib\ThreadLibFunctions.cpp" />
+    <ClCompile Include="BetterMUD.cpp">
+      <RuntimeLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <ClCompile Include="BetterMUD\accessors\AccountAccessor.cpp" />
+    <ClCompile Include="BetterMUD\accessors\CharacterAccessor.cpp" />
+    <ClCompile Include="BetterMUD\accessors\GameAccessor.cpp" />
+    <ClCompile Include="BetterMUD\accessors\ItemAccessor.cpp" />
+    <ClCompile Include="BetterMUD\accessors\PortalAccessor.cpp" />
+    <ClCompile Include="BetterMUD\accessors\RegionAccessor.cpp" />
+    <ClCompile Include="BetterMUD\accessors\RoomAccessor.cpp" />
+    <ClCompile Include="BetterMUD\databases\AccountDatabase.cpp" />
+    <ClCompile Include="BetterMUD\databases\CharacterDatabase.cpp" />
+    <ClCompile Include="BetterMUD\databases\CommandDatabase.cpp" />
+    <ClCompile Include="BetterMUD\databases\ItemDatabase.cpp" />
+    <ClCompile Include="BetterMUD\databases\LogicDatabase.cpp" />
+    <ClCompile Include="BetterMUD\databases\PortalDatabase.cpp" />
+    <ClCompile Include="BetterMUD\databases\RegionDatabase.cpp" />
+    <ClCompile Include="BetterMUD\databases\RoomDatabase.cpp" />
+    <ClCompile Include="BetterMUD\entities\Account.cpp" />
+    <ClCompile Include="BetterMUD\entities\Action.cpp" />
+    <ClCompile Include="BetterMUD\entities\Character.cpp" />
+    <ClCompile Include="BetterMUD\entities\Item.cpp" />
+    <ClCompile Include="BetterMUD\entities\Portal.cpp" />
+    <ClCompile Include="BetterMUD\entities\Region.cpp" />
+    <ClCompile Include="BetterMUD\entities\Room.cpp" />
+    <ClCompile Include="BetterMUD\Game.cpp" />
+    <ClCompile Include="BetterMUD\network\BetterTelnet.cpp" />
+    <ClCompile Include="BetterMUD\network\TelnetGame.cpp" />
+    <ClCompile Include="BetterMUD\network\TelnetLogon.cpp" />
+    <ClCompile Include="BetterMUD\network\TelnetMenu.cpp" />
+    <ClCompile Include="BetterMUD\network\TelnetReporter.cpp" />
+    <ClCompile Include="BetterMUD\scripts\LogicCollection.cpp" />
+    <ClCompile Include="BetterMUD\scripts\python\PythonHelpers.cpp" />
+    <ClCompile Include="BetterMUD\scripts\python\PythonLogic.cpp" />
+    <ClCompile Include="BetterMUD\scripts\python\PythonScript.cpp" />
+    <ClCompile Include="BetterMUD\scripts\python\PythonWrappers.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
