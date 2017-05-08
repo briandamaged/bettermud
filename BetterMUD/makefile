@@ -11,7 +11,7 @@ BETTERMUDDIR = ./BetterMUD
 # libraries
 LIBS = -lpthread -ldl -lutil
 
-PYTHONDIR = /usr/include/python2.6
+PYTHONDIR = /usr/include/python2.7
 
 ACCESSORS = $(BETTERMUDDIR)/accessors
 DATABASES = $(BETTERMUDDIR)/databases
@@ -43,4 +43,4 @@ main: $(wildcard *.cpp)
 	$(CXX) $(CFLAGS) *.cpp -c;
 
 link: $(wildcard *.cpp)
-	$(CXX) $(CFLAGS) *.o /usr/lib64/libpython2.6.so $(LIBS) -o bettermud
+	$(CXX) $(CFLAGS) *.o /usr/lib64/libpython2.7.so $(LIBS) -o bettermud
