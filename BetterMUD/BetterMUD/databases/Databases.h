@@ -122,7 +122,7 @@ public:
 
     entity& get( entityid p_id )
     {
-        if( p_id >= this->m_container.size() || p_id == 0 )
+        if( p_id >= (entityid)this->m_container.size() || p_id == 0 )
             throw Exception( "Out of bounds error in vector database" );
 
         if( this->m_container[p_id].ID() == 0 )

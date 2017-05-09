@@ -51,7 +51,7 @@ int main()
         PyErr_Print();          // print python errors
         std::cout << e.GetError();
     }
-    catch( std::exception& e )
+    catch( std::exception& /*e*/ )
     {
         // catch standard errors
     }

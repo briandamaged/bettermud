@@ -134,7 +134,7 @@ PythonInstance* PythonModule::SpawnNew( const std::string p_str )
 
     return mod;
     }
-    catch( Exception& e ) { throw; }
+    catch( Exception& /*e*/ ) { throw; }
     catch( ... )        // catch any extra errors we didn't grab before
     {
         PyErr_Print();

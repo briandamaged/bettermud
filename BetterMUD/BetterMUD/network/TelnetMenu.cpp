@@ -30,7 +30,7 @@ void TelnetMenu::Handle( string p_data )
         m_connection->AddHandler( new TelnetMenuEnter( *m_connection, m_account.ID() ) );
         break;
     case 2:
-        if( m_account.Characters() >= m_account.AllowedCharacters() )
+        if( (int)m_account.Characters() >= m_account.AllowedCharacters() )
         {
             m_connection->Protocol().SendString( 
                 *m_connection, 
@@ -133,7 +133,7 @@ void TelnetMenuNew::Handle( string p_data )
     // If he's logged in twice (or even more!), he could easily create more
     // characters than he's allowed, since the check is done when the user 
     // enters this state.
-    if( m_account.Characters() >= m_account.AllowedCharacters() )
+    if( (int)m_account.Characters() >= m_account.AllowedCharacters() )
     {
         m_connection->Protocol().SendString( 
             *m_connection, 
@@ -205,7 +205,7 @@ void TelnetMenuDelete::Handle( string p_data )
         return;
     }
 
-    if( option > m_account.Characters() )
+    if( option > (int)m_account.Characters() )
     {
         m_connection->Protocol().SendString( 
             *m_connection, 
@@ -257,7 +257,7 @@ void TelnetMenuEnter::Handle( string p_data )
         return;
     }
 
-    if( option > m_account.Characters() )
+    if( option > (int)m_account.Characters() )
     {
         m_connection->Protocol().SendString( 
             *m_connection, 
