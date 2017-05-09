@@ -61,8 +61,8 @@ std::string TrimWhitespace( const std::string& p_string )
     int wsb;
 
     // trim the front
-    wsf = p_string.find_first_not_of( WHITESPACE );
-    wsb = p_string.find_last_not_of( WHITESPACE );
+    wsf = (int)p_string.find_first_not_of( WHITESPACE );
+    wsb = (int)p_string.find_last_not_of( WHITESPACE );
 
     if( wsf == std::string::npos )
     {
@@ -76,7 +76,7 @@ std::string TrimWhitespace( const std::string& p_string )
 
 std::string ParseWord( const std::string& p_string, int p_index )
 {
-    int wss = p_string.find_first_not_of( WHITESPACE );
+    int wss = (int)p_string.find_first_not_of( WHITESPACE );
 
     while( p_index > 0 )
     {
@@ -85,12 +85,12 @@ std::string ParseWord( const std::string& p_string, int p_index )
         // find the beginning of the next word, by finding whitespace
         // to end the current word, and then non-whitespace at the start
         // of the next word
-        wss = p_string.find_first_of( WHITESPACE, wss );
-        wss = p_string.find_first_not_of( WHITESPACE, wss );
+        wss = (int)p_string.find_first_of( WHITESPACE, wss );
+        wss = (int)p_string.find_first_not_of( WHITESPACE, wss );
     }
 
     // find the end of the word
-    int wse = p_string.find_first_of( WHITESPACE, wss );
+    int wse = (int)p_string.find_first_of( WHITESPACE, wss );
 
     if( wss == std::string::npos )
     {
@@ -103,7 +103,7 @@ std::string ParseWord( const std::string& p_string, int p_index )
 
 std::string RemoveWord( const std::string& p_string, int p_index )
 {
-    int wss = p_string.find_first_not_of( WHITESPACE );
+    int wss = (int)p_string.find_first_not_of( WHITESPACE );
 
     while( p_index > 0 )
     {
@@ -112,15 +112,15 @@ std::string RemoveWord( const std::string& p_string, int p_index )
         // find the beginning of the next word, by finding whitespace
         // to end the current word, and then non-whitespace at the start
         // of the next word
-        wss = p_string.find_first_of( WHITESPACE, wss );
-        wss = p_string.find_first_not_of( WHITESPACE, wss );
+        wss = (int)p_string.find_first_of( WHITESPACE, wss );
+        wss = (int)p_string.find_first_not_of( WHITESPACE, wss );
     }
 
     // find the end of the word
-    int wse = p_string.find_first_of( WHITESPACE, wss );
+    int wse = (int)p_string.find_first_of( WHITESPACE, wss );
 
     // find the beginning of the next word
-    wse = p_string.find_first_not_of( WHITESPACE, wse );
+    wse = (int)p_string.find_first_not_of( WHITESPACE, wse );
 
     if( wss == std::string::npos )
     {

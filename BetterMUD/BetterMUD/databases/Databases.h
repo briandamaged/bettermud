@@ -203,7 +203,7 @@ public:
             return 1;
 
         if( this->m_container.size() == this->m_container.rbegin()->first )
-            return this->m_container.size() + 1;
+            return (entityid)this->m_container.size() + 1;
 
         entityid openid = 0;
         entityid previous = 0;
