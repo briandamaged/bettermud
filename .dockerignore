@@ -1,3 +1,8 @@
 # Build artifacts
 *.o
 BetterMUD/bettermud
+
+# Git stuffs
+.git
+.gitignore
+
