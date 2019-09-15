@@ -8,5 +8,10 @@ RUN apt-get update && \
 
 COPY . /usr/src/app
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app/BetterMUD
 
+RUN make libs bettermud link
+
+EXPOSE 5110
+
+CMD ./bettermud

@@ -41,4 +41,4 @@ main: $(wildcard *.cpp)
 	$(CXX) $(CFLAGS) *.cpp -c;
 
 link: $(wildcard *.cpp)
-	$(CXX) $(CFLAGS) *.o /usr/lib/x86_64-linux-gnu/libpython2.7.so $(LIBS) -o bettermud
+	$(CXX) $(CFLAGS) *.o $(shell pkg-config --libs python) $(LIBS) -o bettermud
