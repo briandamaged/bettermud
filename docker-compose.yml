@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+  bettermud:
+    build: .
+
+    ports:
+      - 5110:5110
