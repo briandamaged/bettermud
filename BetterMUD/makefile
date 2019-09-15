@@ -11,8 +11,6 @@ BETTERMUDDIR = ./BetterMUD
 # libraries
 LIBS = -lpthread -ldl -lutil
 
-PYTHONDIR = /usr/include/python2.6
-
 ACCESSORS = $(BETTERMUDDIR)/accessors
 DATABASES = $(BETTERMUDDIR)/databases
 ENTITIES  = $(BETTERMUDDIR)/entities
@@ -21,7 +19,7 @@ SCRIPTS   = $(BETTERMUDDIR)/scripts
 PYSCRIPTS = $(BETTERMUDDIR)/scripts/python
 
 # flags
-CFLAGS = -I$(PYTHONDIR) -I$(MUDLIBDIR) -Xlinker -export-dynamic -g
+CFLAGS = $(shell pkg-config --cflags python) -I$(MUDLIBDIR) -Xlinker -export-dynamic -g
 
 libs: $(wildcard *.cpp)
 	$(CXX) $(CFLAGS) $(SOCKETLIBDIR)/*.cpp -c;
@@ -43,4 +41,4 @@ main: $(wildcard *.cpp)
 	$(CXX) $(CFLAGS) *.cpp -c;
 
 link: $(wildcard *.cpp)
-	$(CXX) $(CFLAGS) *.o /usr/lib64/libpython2.6.so $(LIBS) -o bettermud
+	$(CXX) $(CFLAGS) *.o /usr/lib/x86_64-linux-gnu/libpython2.7.so $(LIBS) -o bettermud
