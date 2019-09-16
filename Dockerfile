@@ -13,7 +13,7 @@ RUN chown -R mud:mud /usr/src/app
 
 USER mud
 WORKDIR /usr/src/app/BetterMUD
-RUN make libs bettermud link
+RUN make clean libs bettermud link
 
 EXPOSE 5110
 

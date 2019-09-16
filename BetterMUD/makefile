@@ -42,3 +42,7 @@ main: $(wildcard *.cpp)
 
 link: $(wildcard *.cpp)
 	$(CXX) $(CFLAGS) *.o $(shell pkg-config --libs python) $(LIBS) -o bettermud
+
+clean:
+	rm -f bettermud;
+	find -name "*.o" -delete
