@@ -1,0 +1,7 @@
+# Build artifacts
+*.o
+
+# Git stuffs
+.git
+.gitignore
+
