@@ -122,7 +122,7 @@ public:
 
     entity& get( entityid p_id )
     {
-        if( p_id >= this->m_container.size() || p_id == 0 )
+        if( p_id >= (entityid)this->m_container.size() || p_id == 0 )
             throw Exception( "Out of bounds error in vector database" );
 
         if( this->m_container[p_id].ID() == 0 )
@@ -133,7 +133,7 @@ public:
 
     entity& create( entityid p_id )
     {
-        if( this->m_container.size() <= p_id )
+        if( (entityid)this->m_container.size() <= p_id )
             this->m_container.resize( p_id + 1 );
 
         this->m_container[p_id].SetID( p_id );
@@ -203,7 +203,7 @@ public:
             return 1;
 
         if( this->m_container.size() == this->m_container.rbegin()->first )
-            return this->m_container.size() + 1;
+            return (entityid)this->m_container.size() + 1;
 
         entityid openid = 0;
         entityid previous = 0;

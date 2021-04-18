@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A12BAE9B-363D-496C-B0DC-D7B5331E824C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>BetterMUD</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CRT_SECURE_NO_WARNINGS;_CONSOLE;HAVE_ROUND;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Libraries;$(PYTHON)\Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(PYTHON)\libs</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;HAVE_ROUND;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Libraries;$(PYTHON64)\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(PYTHON64)\libs</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CONSOLE;HAVE_ROUND;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Libraries;$(PYTHON)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(PYTHON)\libs</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;HAVE_ROUND;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Libraries;$(PYTHON64)\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(PYTHON64)\libs</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BetterMUD\accessors\AccessorMacros.h" />
+    <ClInclude Include="BetterMUD\accessors\Accessors.h" />
+    <ClInclude Include="BetterMUD\accessors\AccountAccessor.h" />
+    <ClInclude Include="BetterMUD\accessors\CharacterAccessor.h" />
+    <ClInclude Include="BetterMUD\accessors\GameAccessor.h" />
+    <ClInclude Include="BetterMUD\accessors\ItemAccessor.h" />
+    <ClInclude Include="BetterMUD\accessors\PortalAccessor.h" />
+    <ClInclude Include="BetterMUD\accessors\RegionAccessor.h" />
+    <ClInclude Include="BetterMUD\accessors\RoomAccessor.h" />
+    <ClInclude Include="BetterMUD\databases\AccountDatabase.h" />
+    <ClInclude Include="BetterMUD\databases\AllDatabases.h" />
+    <ClInclude Include="BetterMUD\databases\CharacterDatabase.h" />
+    <ClInclude Include="BetterMUD\databases\CommandDatabase.h" />
+    <ClInclude Include="BetterMUD\databases\Databases.h" />
+    <ClInclude Include="BetterMUD\databases\ItemDatabase.h" />
+    <ClInclude Include="BetterMUD\databases\LogicDatabase.h" />
+    <ClInclude Include="BetterMUD\databases\PortalDatabase.h" />
+    <ClInclude Include="BetterMUD\databases\RegionDatabase.h" />
+    <ClInclude Include="BetterMUD\databases\RoomDatabase.h" />
+    <ClInclude Include="BetterMUD\entities\Account.h" />
+    <ClInclude Include="BetterMUD\entities\Action.h" />
+    <ClInclude Include="BetterMUD\entities\Attributes.h" />
+    <ClInclude Include="BetterMUD\entities\Character.h" />
+    <ClInclude Include="BetterMUD\entities\DataEntity.h" />
+    <ClInclude Include="BetterMUD\entities\Entity.h" />
+    <ClInclude Include="BetterMUD\entities\Item.h" />
+    <ClInclude Include="BetterMUD\entities\LogicEntity.h" />
+    <ClInclude Include="BetterMUD\entities\Portal.h" />
+    <ClInclude Include="BetterMUD\entities\Region.h" />
+    <ClInclude Include="BetterMUD\entities\Room.h" />
+    <ClInclude Include="BetterMUD\Exception.h" />
+    <ClInclude Include="BetterMUD\Game.h" />
+    <ClInclude Include="BetterMUD\network\BetterTelnet.h" />
+    <ClInclude Include="BetterMUD\network\TelnetGame.h" />
+    <ClInclude Include="BetterMUD\network\TelnetLogon.h" />
+    <ClInclude Include="BetterMUD\network\TelnetMenu.h" />
+    <ClInclude Include="BetterMUD\network\TelnetReporter.h" />
+    <ClInclude Include="BetterMUD\scripts\Command.h" />
+    <ClInclude Include="BetterMUD\scripts\CPPCommand.h" />
+    <ClInclude Include="BetterMUD\scripts\CPPCommands.h" />
+    <ClInclude Include="BetterMUD\scripts\Logic.h" />
+    <ClInclude Include="BetterMUD\scripts\LogicCollection.h" />
+    <ClInclude Include="BetterMUD\scripts\python\PythonCommand.h" />
+    <ClInclude Include="BetterMUD\scripts\python\PythonHelpers.h" />
+    <ClInclude Include="BetterMUD\scripts\python\PythonLogic.h" />
+    <ClInclude Include="BetterMUD\scripts\python\PythonScript.h" />
+    <ClInclude Include="BetterMUD\scripts\python\PythonWrappers.h" />
+    <ClInclude Include="BetterMUD\scripts\Script.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BetterMUD.cpp" />
+    <ClCompile Include="BetterMUD\accessors\AccountAccessor.cpp" />
+    <ClCompile Include="BetterMUD\accessors\CharacterAccessor.cpp" />
+    <ClCompile Include="BetterMUD\accessors\GameAccessor.cpp" />
+    <ClCompile Include="BetterMUD\accessors\ItemAccessor.cpp" />
+    <ClCompile Include="BetterMUD\accessors\PortalAccessor.cpp" />
+    <ClCompile Include="BetterMUD\accessors\RegionAccessor.cpp" />
+    <ClCompile Include="BetterMUD\accessors\RoomAccessor.cpp" />
+    <ClCompile Include="BetterMUD\databases\AccountDatabase.cpp" />
+    <ClCompile Include="BetterMUD\databases\CharacterDatabase.cpp" />
+    <ClCompile Include="BetterMUD\databases\CommandDatabase.cpp" />
+    <ClCompile Include="BetterMUD\databases\Databases.cpp" />
+    <ClCompile Include="BetterMUD\databases\ItemDatabase.cpp" />
+    <ClCompile Include="BetterMUD\databases\LogicDatabase.cpp" />
+    <ClCompile Include="BetterMUD\databases\PortalDatabase.cpp" />
+    <ClCompile Include="BetterMUD\databases\RegionDatabase.cpp" />
+    <ClCompile Include="BetterMUD\databases\RoomDatabase.cpp" />
+    <ClCompile Include="BetterMUD\entities\Account.cpp" />
+    <ClCompile Include="BetterMUD\entities\Action.cpp" />
+    <ClCompile Include="BetterMUD\entities\Character.cpp" />
+    <ClCompile Include="BetterMUD\entities\Item.cpp" />
+    <ClCompile Include="BetterMUD\entities\Portal.cpp" />
+    <ClCompile Include="BetterMUD\entities\Region.cpp" />
+    <ClCompile Include="BetterMUD\entities\Room.cpp" />
+    <ClCompile Include="BetterMUD\Game.cpp" />
+    <ClCompile Include="BetterMUD\network\BetterTelnet.cpp" />
+    <ClCompile Include="BetterMUD\network\TelnetGame.cpp" />
+    <ClCompile Include="BetterMUD\network\TelnetLogon.cpp" />
+    <ClCompile Include="BetterMUD\network\TelnetMenu.cpp" />
+    <ClCompile Include="BetterMUD\network\TelnetReporter.cpp" />
+    <ClCompile Include="BetterMUD\scripts\LogicCollection.cpp" />
+    <ClCompile Include="BetterMUD\scripts\python\PythonHelpers.cpp" />
+    <ClCompile Include="BetterMUD\scripts\python\PythonLogic.cpp" />
+    <ClCompile Include="BetterMUD\scripts\python\PythonScript.cpp" />
+    <ClCompile Include="BetterMUD\scripts\python\PythonWrappers.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Libraries\BasicLib\BasicLib.vcxproj">
+      <Project>{ed1addba-cb9b-42dd-b691-582666d35a99}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\SocketLib\SocketLib.vcxproj">
+      <Project>{15de84e4-0aea-498f-ae23-55afffa07032}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\ThreadLib\ThreadLib.vcxproj">
+      <Project>{a271d91f-ab10-428e-9fea-eeb2de2acc5f}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

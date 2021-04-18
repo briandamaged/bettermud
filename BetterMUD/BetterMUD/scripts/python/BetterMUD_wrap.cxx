@@ -2267,7 +2267,7 @@ static PyObject *_wrap_character_DoAction(PyObject *self, PyObject *args) {
     PyObject *argv[8];
     int ii;
     
-    argc = PyObject_Length(args);
+    argc = (int)PyObject_Length(args);
     for (ii = 0; (ii < argc) && (ii < 7); ii++) {
         argv[ii] = PyTuple_GetItem(args,ii);
     }
@@ -3761,7 +3761,7 @@ static PyObject *_wrap_item_DoAction(PyObject *self, PyObject *args) {
     PyObject *argv[8];
     int ii;
     
-    argc = PyObject_Length(args);
+    argc = (int)PyObject_Length(args);
     for (ii = 0; (ii < argc) && (ii < 7); ii++) {
         argv[ii] = PyTuple_GetItem(args,ii);
     }
@@ -4602,7 +4602,7 @@ static PyObject *_wrap_portal_DoAction(PyObject *self, PyObject *args) {
     PyObject *argv[8];
     int ii;
     
-    argc = PyObject_Length(args);
+    argc = (int)PyObject_Length(args);
     for (ii = 0; (ii < argc) && (ii < 7); ii++) {
         argv[ii] = PyTuple_GetItem(args,ii);
     }
@@ -6181,7 +6181,7 @@ static PyObject *_wrap_region_DoAction(PyObject *self, PyObject *args) {
     PyObject *argv[8];
     int ii;
     
-    argc = PyObject_Length(args);
+    argc = (int)PyObject_Length(args);
     for (ii = 0; (ii < argc) && (ii < 7); ii++) {
         argv[ii] = PyTuple_GetItem(args,ii);
     }
@@ -7463,7 +7463,7 @@ static PyObject *_wrap_room_DoAction(PyObject *self, PyObject *args) {
     PyObject *argv[8];
     int ii;
     
-    argc = PyObject_Length(args);
+    argc = (int)PyObject_Length(args);
     for (ii = 0; (ii < argc) && (ii < 7); ii++) {
         argv[ii] = PyTuple_GetItem(args,ii);
     }

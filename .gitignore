@@ -1,0 +1,6 @@
+/BetterMUD/Backup
+*.suo
+*.obj
+Debug
+Release
+.vs
